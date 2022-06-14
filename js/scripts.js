@@ -34,6 +34,11 @@ Ledger.prototype.withdrawl = function (id, withdrawlAmount) {
   console.log(newBalance);
   }
 
+  Ledger.prototype.balanceAmount = function (id) {
+    return ledger.accountList[id].accountBalance;
+    console.log(ledger.accountList[id]);
+  }
+
 //Business Logic for Accounts
 
 function Account(personName, accountBalance) {
